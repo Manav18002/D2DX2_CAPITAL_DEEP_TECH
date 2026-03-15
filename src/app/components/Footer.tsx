@@ -42,14 +42,12 @@ export function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 md:gap-12 mb-14">
           {/* Brand */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <div className="flex items-center space-x-3 mb-5">
-              <div className="w-11 h-11 bg-gradient-to-br from-blue-500 to-blue-700 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/20">
-                <span className="text-white font-bold text-base">D2</span>
-              </div>
-              <div>
-                <h3 className="text-lg font-bold text-gray-900 dark:text-white tracking-tight">D2DX2 Capital</h3>
-                <p className="text-[11px] text-blue-600 dark:text-blue-400 font-semibold uppercase tracking-widest">Venture Platform</p>
-              </div>
+            <div className="mb-1">
+              <img
+                src="/pngs/full_logo_noBg-removebg-preview.png"
+                alt="D2DX2 Capital"
+                className="h-25 w-auto object-contain drop-shadow-[0_10px_28px_rgba(37,99,235,0.12)]"
+              />
             </div>
             <p className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed mb-5 max-w-xs">
               Capital-backed execution ecosystem for scalable ventures.

@@ -1,3 +1,4 @@
+import React from 'react';
 import { useState, useEffect } from 'react';
 import { Menu, X, Sun, Moon } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
@@ -61,17 +62,14 @@ export function Navbar() {
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1 }}
-            className="flex items-center space-x-3 cursor-pointer"
+            className="flex items-center cursor-pointer"
             onClick={() => scrollToSection('hero')}
           >
-            <div className="relative w-12 h-12 bg-gradient-to-br from-blue-600 to-blue-800 dark:from-blue-500 dark:to-blue-700 rounded-xl flex items-center justify-center shadow-lg shadow-blue-500/25">
-              <span className="text-white font-bold text-lg tracking-tight">D2</span>
-              <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-white/20 to-transparent" />
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-gray-900 dark:text-white tracking-tight">D2DX2 Capital</h1>
-              <p className="text-[11px] font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-widest">Venture Platform</p>
-            </div>
+            <img
+              src="/pngs/full_logo_noBg-removebg-preview.png"
+              alt="D2DX2 Capital"
+              className="h-11 sm:h-25 w-auto object-contain drop-shadow-[0_10px_28px_rgba(37,99,235,0.16)]"
+            />
           </motion.div>
 
           {/* Desktop Navigation */}
